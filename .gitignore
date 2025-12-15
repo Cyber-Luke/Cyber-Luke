@@ -18,9 +18,6 @@ env/
 # Environment Variables
 .env
 
-# Cache (generated user data, not the folder itself)
-cache/*.txt
-
 # IDE
 .vscode/
 .idea/

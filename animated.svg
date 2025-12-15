@@ -208,7 +208,7 @@
   
   <!-- Subtitle -->
   <text x="0" y="45" font-family="Arial, sans-serif" font-size="20" font-weight="600" text-anchor="middle" fill="#00ffff" opacity="0.8" letter-spacing="3">
-    <tspan id="repo_data">24</tspan> Repos with <tspan id="commit_data">733</tspan> Commits
+    <tspan id="repo_data">24</tspan> Repos with <tspan id="commit_data">737</tspan> Commits
   </text>
 </g>
 
@@ -238,9 +238,9 @@
     <tspan fill="#a855f7" opacity="0.9">Lines of Code: </tspan>
     <tspan fill="#a855f7" opacity="1" id="loc_data">1,829,313</tspan>
     <tspan fill="#00ffff" opacity="0.7"> • </tspan>
-    <tspan fill="#00ff88" opacity="1" id="loc_add">2,680,874</tspan><tspan fill="#00ff88" opacity="1">++</tspan>
+    <tspan fill="#00ff88" opacity="1" id="loc_add">2,680,881</tspan><tspan fill="#00ff88" opacity="1">++</tspan>
     <tspan fill="#00ffff" opacity="0.7"> • </tspan>
-    <tspan fill="#ec4899" opacity="1" id="loc_del">851,561</tspan><tspan fill="#ec4899" opacity="1">--</tspan>
+    <tspan fill="#ec4899" opacity="1" id="loc_del">851,568</tspan><tspan fill="#ec4899" opacity="1">--</tspan>
   </text>
 </g>
 

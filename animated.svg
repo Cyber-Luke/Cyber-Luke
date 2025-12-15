@@ -189,8 +189,8 @@
   <text x="15" y="55" font-family="monospace" font-size="12" fill="#00ff88">&gt; Software Engineer | Security Responsible</text>
   <text x="15" y="75" font-family="monospace" font-size="12" fill="#00ffff">&gt; lukas-ernst@outlook.com</text>
   <text x="15" y="95" font-family="monospace" font-size="12" fill="#ec4899">&gt; while(exploring) {</text>
-  <text x="15" y="115" font-family="monospace" font-size="12" fill="#00ff88">&emsp;innovate();</text>
-  <text x="15" y="135" font-family="monospace" font-size="12" fill="#00ffff">&emsp;languages: TS | Java | Python | C | C++ | C#</text>
+  <text x="15" y="115" font-family="monospace" font-size="12" fill="#00ff88">&#x2003;innovate();</text>
+  <text x="15" y="135" font-family="monospace" font-size="12" fill="#00ffff">&#x2003;languages: TS | Java | Python | C | C++ | C#</text>
   <text x="15" y="155" font-family="monospace" font-size="12" fill="#ec4899">}</text>
   
   <!-- Blinking cursor -->

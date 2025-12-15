@@ -189,8 +189,8 @@
   <text x="15" y="55" font-family="monospace" font-size="12" fill="#00ff88">&gt; Software Engineer | Security Responsible</text>
   <text x="15" y="75" font-family="monospace" font-size="12" fill="#00ffff">&gt; lukas-ernst@outlook.com</text>
   <text x="15" y="95" font-family="monospace" font-size="12" fill="#ec4899">&gt; while(exploring) {</text>
-  <text x="15" y="115" font-family="monospace" font-size="12" fill="#00ff88">&#x2003;innovate();</text>
-  <text x="15" y="135" font-family="monospace" font-size="12" fill="#00ffff">&#x2003;languages: TS | Java | Python | C | C++ | C#</text>
+  <text x="15" y="115" font-family="monospace" font-size="12" fill="#00ff88"> innovate();</text>
+  <text x="15" y="135" font-family="monospace" font-size="12" fill="#00ffff"> languages: TS | Java | Python | C | C++ | C#</text>
   <text x="15" y="155" font-family="monospace" font-size="12" fill="#ec4899">}</text>
   
   <!-- Blinking cursor -->
@@ -208,17 +208,17 @@
   
   <!-- Subtitle -->
   <text x="0" y="45" font-family="Arial, sans-serif" font-size="20" font-weight="600" text-anchor="middle" fill="#00ffff" opacity="0.8" letter-spacing="3">
-    <tspan id="repo_data">95</tspan> Repos with <tspan id="commit_data">2,116</tspan> Commits
+    <tspan id="repo_data">24</tspan> Repos with <tspan id="commit_data">729</tspan> Commits
   </text>
 </g>
 
 <!-- Stats on right -->
 <g transform="translate(1050, 260)">
   <text x="0" y="0" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="end" fill="url(#neonGreen)" filter="url(#glow)">
-    <tspan id="star_data">342</tspan> Stars
+    <tspan id="star_data">6</tspan> Stars
   </text>
   <text x="0" y="40" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="end" fill="url(#neonPurple)" filter="url(#glow)">
-    <tspan id="follower_data">196</tspan> Followers
+    <tspan id="follower_data">5</tspan> Followers
   </text>
 </g>
 
@@ -236,11 +236,11 @@
 <g transform="translate(600, 550)" filter="url(#glow)">
   <text x="0" y="0" font-family="monospace" font-size="16" font-weight="600" text-anchor="middle" letter-spacing="1">
     <tspan fill="#a855f7" opacity="0.9">Lines of Code: </tspan>
-    <tspan fill="#a855f7" opacity="1" id="loc_data">446,276</tspan>
+    <tspan fill="#a855f7" opacity="1" id="loc_data">1,829,316</tspan>
     <tspan fill="#00ffff" opacity="0.7"> • </tspan>
-    <tspan fill="#00ff88" opacity="1" id="loc_add">523,178</tspan><tspan fill="#00ff88" opacity="1">++</tspan>
+    <tspan fill="#00ff88" opacity="1" id="loc_add">2,680,856</tspan><tspan fill="#00ff88" opacity="1">++</tspan>
     <tspan fill="#00ffff" opacity="0.7"> • </tspan>
-    <tspan fill="#ec4899" opacity="1" id="loc_del">76,902</tspan><tspan fill="#ec4899" opacity="1">--</tspan>
+    <tspan fill="#ec4899" opacity="1" id="loc_del">851,540</tspan><tspan fill="#ec4899" opacity="1">--</tspan>
   </text>
 </g>
 

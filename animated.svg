@@ -1,0 +1,271 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" width="1200" height="600">
+<defs>
+  <!-- Gradients -->
+  <radialGradient id="spaceGradient" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" style="stop-color:#0a0e27;stop-opacity:1">
+      <animate attributeName="stop-color" values="#0a0e27;#1a1f3a;#0a0e27" dur="8s" repeatCount="indefinite"/>
+    </stop>
+    <stop offset="100%" style="stop-color:#000000;stop-opacity:1"/>
+  </radialGradient>
+  
+  <linearGradient id="neonGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" style="stop-color:#00ff88;stop-opacity:1"/>
+    <stop offset="100%" style="stop-color:#00ffff;stop-opacity:1"/>
+  </linearGradient>
+  
+  <linearGradient id="neonPurple" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" style="stop-color:#a855f7;stop-opacity:1"/>
+    <stop offset="100%" style="stop-color:#ec4899;stop-opacity:1"/>
+  </linearGradient>
+  
+  <linearGradient id="techBlue" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1"/>
+    <stop offset="100%" style="stop-color:#1e40af;stop-opacity:1"/>
+  </linearGradient>
+
+  <!-- Filters -->
+  <filter id="glow">
+    <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+    <feMerge>
+      <feMergeNode in="coloredBlur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+  
+  <filter id="strongGlow">
+    <feGaussianBlur stdDeviation="5" result="coloredBlur"/>
+    <feMerge>
+      <feMergeNode in="coloredBlur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+
+  <!-- Patterns -->
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#00ff88" stroke-width="0.5" opacity="0.1"/>
+  </pattern>
+  
+  <!-- Star pattern -->
+  <g id="star">
+    <circle cx="0" cy="0" r="1.5" fill="#ffffff">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="3s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</defs>
+
+<style>
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+  }
+  
+  @keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  
+  @keyframes sway {
+    0%, 100% { transform: translate(270px, 370px) rotate(5deg); }
+    50% { transform: translate(275px, 375px) rotate(15deg); }
+  }
+  
+  @keyframes pulse {
+    0%, 100% { opacity: 0.4; }
+    50% { opacity: 1; }
+  }
+  
+  @keyframes dash {
+    to { stroke-dashoffset: 0; }
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes orbit {
+    from { transform: rotate(0deg) translateX(150px) rotate(0deg); }
+    to { transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+  }
+  
+  @keyframes dataFlow {
+    0% { transform: translateY(-100%); opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { transform: translateY(100%); opacity: 0; }
+  }
+  
+  .rocket { animation: float 4s ease-in-out infinite; }
+  .planet-group { animation: sway 6s ease-in-out infinite; }
+  .satellite { animation: orbit 15s linear infinite; }
+  .data-stream { animation: dataFlow 3s linear infinite; }
+  .pulse { animation: pulse 2s ease-in-out infinite; }
+  .glow-text { 
+    fill: url(#neonGreen);
+    filter: url(#strongGlow);
+  }
+</style>
+
+<!-- Background -->
+<rect width="1200" height="600" fill="url(#spaceGradient)"/>
+
+<!-- Grid overlay -->
+<rect width="1200" height="600" fill="url(#grid)" opacity="0.3"/>
+
+<!-- Stars -->
+<g id="stars">
+  <circle cx="100" cy="80" r="1" fill="#ffffff" opacity="0.8">
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="250" cy="120" r="1.2" fill="#ffffff" opacity="0.6">
+    <animate attributeName="opacity" values="0.2;0.9;0.2" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="400" cy="90" r="0.8" fill="#ffffff" opacity="0.7">
+    <animate attributeName="opacity" values="0.4;1;0.4" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="850" cy="95" r="1.3" fill="#ffffff" opacity="0.6">
+    <animate attributeName="opacity" values="0.2;1;0.2" dur="2.8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1050" cy="105" r="0.9" fill="#ffffff" opacity="0.7">
+    <animate attributeName="opacity" values="0.4;0.9;0.4" dur="3.2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="180" cy="480" r="1.1" fill="#ffffff" opacity="0.7">
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="2.3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="380" cy="520" r="0.8" fill="#ffffff" opacity="0.8">
+    <animate attributeName="opacity" values="0.4;1;0.4" dur="3.7s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="720" cy="490" r="1.2" fill="#ffffff" opacity="0.6">
+    <animate attributeName="opacity" values="0.2;0.9;0.2" dur="2.6s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="950" cy="510" r="1" fill="#ffffff" opacity="0.7">
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="3.4s" repeatCount="indefinite"/>
+  </circle>
+</g>
+
+<!-- Central Planet -->
+<g class="planet-group">
+  <!-- Planet body -->
+  <circle cx="0" cy="0" r="80" fill="url(#techBlue)" opacity="0.9" filter="url(#glow)">
+    <animate attributeName="r" values="80;82;80" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Planet rings -->
+  <ellipse class="planet-ring" cx="0" cy="0" rx="120" ry="30" fill="none" stroke="url(#neonGreen)" stroke-width="3" opacity="0.6" filter="url(#glow)"/>
+  <ellipse class="planet-ring" cx="0" cy="0" rx="140" ry="35" fill="none" stroke="url(#neonPurple)" stroke-width="2" opacity="0.4" filter="url(#glow)"/>
+  
+  <!-- Orbiting satellite -->
+  <g class="satellite">
+    <rect x="-8" y="-8" width="16" height="16" fill="url(#neonGreen)" filter="url(#glow)"/>
+    <line x1="-15" y1="0" x2="-8" y2="0" stroke="url(#neonGreen)" stroke-width="2"/>
+    <line x1="8" y1="0" x2="15" y2="0" stroke="url(#neonGreen)" stroke-width="2"/>
+  </g>
+</g>
+
+<!-- Code/Data streams -->
+<g opacity="0.4">
+  
+  <!-- Right data stream -->
+  <g>
+    <text class="data-stream" x="1104" y="-50" font-family="monospace" font-size="14" fill="#00ff88" style="animation-delay: 0.3s">01001010</text>
+    <text class="data-stream" x="1104" y="0" font-family="monospace" font-size="14" fill="#00ff88" style="animation-delay: 0.8s">11010011</text>
+    <text class="data-stream" x="1104" y="50" font-family="monospace" font-size="14" fill="#00ff88" style="animation-delay: 1.3s">10101101</text>
+  </g>
+</g>
+
+<!-- Terminal/Code window -->
+<g transform="translate(450, 150)">
+  <rect x="0" y="0" width="300" height="180" rx="8" fill="#1a1f3a" opacity="0.9" stroke="url(#neonGreen)" stroke-width="2" filter="url(#glow)"/>
+  
+  <!-- Terminal header -->
+  <rect x="0" y="0" width="300" height="30" fill="#0a0e27"/>
+  <!-- Header border (top, left, right only with rounded corners) -->
+  <path d="M 8,0 L 292,0 A 8,8 0 0 1 300,8 L 300,30 M 0,30 L 0,8 A 8,8 0 0 1 8,0" stroke="url(#neonGreen)" stroke-width="2" fill="none"/>
+  <circle cx="15" cy="15" r="5" fill="#ff5555"/>
+  <circle cx="35" cy="15" r="5" fill="#ffff55"/>
+  <circle cx="55" cy="15" r="5" fill="#55ff55"/>
+  
+  <!-- Code lines -->
+  <text x="15" y="55" font-family="monospace" font-size="12" fill="#00ff88">&gt; Software Engineer | Security Responsible</text>
+  <text x="15" y="75" font-family="monospace" font-size="12" fill="#00ffff">&gt; lukas-ernst@outlook.com</text>
+  <text x="15" y="95" font-family="monospace" font-size="12" fill="#ec4899">&gt; while(exploring) {</text>
+  <text x="15" y="115" font-family="monospace" font-size="12" fill="#00ff88">&emsp;innovate();</text>
+  <text x="15" y="135" font-family="monospace" font-size="12" fill="#00ffff">&emsp;languages: TS | Java | Python | C | C++ | C#</text>
+  <text x="15" y="155" font-family="monospace" font-size="12" fill="#ec4899">}</text>
+  
+  <!-- Blinking cursor -->
+  <rect x="15" y="160" width="8" height="15" fill="#00ff88">
+    <animate attributeName="opacity" values="0;1;0" dur="1s" repeatCount="indefinite"/>
+  </rect>
+</g>
+
+<!-- Main Title -->
+<g transform="translate(600, 80)">
+  <text x="0" y="0" font-family="Arial, sans-serif" font-size="72" font-weight="bold" text-anchor="middle" class="glow-text" letter-spacing="8">
+    EXPLORE
+    <animate attributeName="opacity" values="0.8;1;0.8" dur="3s" repeatCount="indefinite"/>
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="0" y="45" font-family="Arial, sans-serif" font-size="20" font-weight="600" text-anchor="middle" fill="#00ffff" opacity="0.8" letter-spacing="3">
+    <tspan id="repo_data">95</tspan> Repos with <tspan id="commit_data">2,116</tspan> Commits
+  </text>
+</g>
+
+<!-- Stats on right -->
+<g transform="translate(1050, 260)">
+  <text x="0" y="0" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="end" fill="url(#neonGreen)" filter="url(#glow)">
+    <tspan id="star_data">342</tspan> Stars
+  </text>
+  <text x="0" y="40" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="end" fill="url(#neonPurple)" filter="url(#glow)">
+    <tspan id="follower_data">196</tspan> Followers
+  </text>
+</g>
+
+<!-- Left vertical text -->
+<g transform="translate(90, 350)">
+  <text x="0" y="0" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#00ff88" opacity="0.9" transform="rotate(-90)" letter-spacing="6">
+    CYBER-LUKE
+  </text>
+  <text x="0" y="-40" font-family="Arial, sans-serif" font-size="18" font-weight="600" fill="#00ffff" opacity="0.7" transform="rotate(-90)" letter-spacing="4">
+    2001
+  </text>
+</g>
+
+<!-- Bottom stats bar -->
+<g transform="translate(600, 550)" filter="url(#glow)">
+  <text x="0" y="0" font-family="monospace" font-size="16" font-weight="600" text-anchor="middle" letter-spacing="1">
+    <tspan fill="#a855f7" opacity="0.9">Lines of Code: </tspan>
+    <tspan fill="#a855f7" opacity="1" id="loc_data">446,276</tspan>
+    <tspan fill="#00ffff" opacity="0.7"> • </tspan>
+    <tspan fill="#00ff88" opacity="1" id="loc_add">523,178</tspan><tspan fill="#00ff88" opacity="1">++</tspan>
+    <tspan fill="#00ffff" opacity="0.7"> • </tspan>
+    <tspan fill="#ec4899" opacity="1" id="loc_del">76,902</tspan><tspan fill="#ec4899" opacity="1">--</tspan>
+  </text>
+</g>
+
+<!-- Geometric decorative elements -->
+<g opacity="0.3" filter="url(#glow)">
+  <!-- Corner brackets -->
+  <path d="M30,30 L30,60 M30,30 L60,30" stroke="url(#neonGreen)" stroke-width="3" fill="none"/>
+  <path d="M1170,30 L1170,60 M1170,30 L1140,30" stroke="url(#neonGreen)" stroke-width="3" fill="none"/>
+  <path d="M30,570 L30,540 M30,570 L60,570" stroke="url(#neonGreen)" stroke-width="3" fill="none"/>
+  <path d="M1170,570 L1170,540 M1170,570 L1140,570" stroke="url(#neonGreen)" stroke-width="3" fill="none"/>
+</g>
+
+<!-- Connecting lines -->
+<g opacity="0.3">
+  <line x1="200" y1="300" x2="900" y2="300" stroke="url(#neonGreen)" stroke-width="1" stroke-dasharray="5,5">
+    <animate attributeName="stroke-dashoffset" from="0" to="10" dur="1s" repeatCount="indefinite"/>
+  </line>
+</g>
+
+<!-- Floating particles -->
+<g class="pulse">
+  <circle cx="350" cy="250" r="3" fill="#00ff88" opacity="0.6"/>
+  <circle cx="800" cy="400" r="2.5" fill="#00ffff" opacity="0.5"/>
+  <circle cx="550" cy="450" r="2" fill="#a855f7" opacity="0.6"/>
+  <circle cx="1000" cy="150" r="2.5" fill="#ec4899" opacity="0.5"/>
+</g>
+
+</svg>

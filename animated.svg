@@ -208,7 +208,7 @@
   
   <!-- Subtitle -->
   <text x="0" y="45" font-family="Arial, sans-serif" font-size="20" font-weight="600" text-anchor="middle" fill="#00ffff" opacity="0.8" letter-spacing="3">
-    <tspan id="repo_data">24</tspan> Repos with <tspan id="commit_data">745</tspan> Commits
+    <tspan id="repo_data">24</tspan> Repos with <tspan id="commit_data">746</tspan> Commits
   </text>
 </g>
 
@@ -236,11 +236,11 @@
 <g transform="translate(600, 550)" filter="url(#glow)">
   <text x="0" y="0" font-family="monospace" font-size="16" font-weight="600" text-anchor="middle" letter-spacing="1">
     <tspan fill="#a855f7" opacity="0.9">Lines of Code: </tspan>
-    <tspan fill="#a855f7" opacity="1" id="loc_data">2,062,906</tspan>
+    <tspan fill="#a855f7" opacity="1" id="loc_data">2,063,369</tspan>
     <tspan fill="#00ffff" opacity="0.7"> • </tspan>
-    <tspan fill="#00ff88" opacity="1" id="loc_add">2,917,472</tspan><tspan fill="#00ff88" opacity="1">++</tspan>
+    <tspan fill="#00ff88" opacity="1" id="loc_add">2,918,355</tspan><tspan fill="#00ff88" opacity="1">++</tspan>
     <tspan fill="#00ffff" opacity="0.7"> • </tspan>
-    <tspan fill="#ec4899" opacity="1" id="loc_del">854,566</tspan><tspan fill="#ec4899" opacity="1">--</tspan>
+    <tspan fill="#ec4899" opacity="1" id="loc_del">854,986</tspan><tspan fill="#ec4899" opacity="1">--</tspan>
   </text>
 </g>
 

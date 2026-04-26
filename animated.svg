@@ -218,7 +218,7 @@
     <tspan id="star_data">7</tspan> Stars
   </text>
   <text x="0" y="40" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="end" fill="url(#neonPurple)" filter="url(#glow)">
-    <tspan id="follower_data">5</tspan> Followers
+    <tspan id="follower_data">6</tspan> Followers
   </text>
 </g>
 
